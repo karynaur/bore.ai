@@ -35,7 +35,7 @@ def preprocess_sentence(sentence):
   # adding a start and an end token to the sentence
   return sentence
 
-with open('tokenizer.pickle', 'rb') as handle:
+with open('assets/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
     START_TOKEN, END_TOKEN = [tokenizer.vocab_size], [tokenizer.vocab_size + 1]
 
@@ -337,7 +337,7 @@ model = transformer(
     num_heads=NUM_HEADS,
     dropout=DROPOUT)
 
-model.load_weights('chat_bot.h5')
+model.load_weights('assets/chat_bot.h5')
 
 def evaluate(sentence):
   sentence = preprocess_sentence(sentence)
