@@ -11,3 +11,4 @@ def execute():
   tts.save('assets/audio.wav')
 
   inference.main()
+execute()
