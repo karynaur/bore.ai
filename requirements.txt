@@ -9,4 +9,6 @@ numba==0.48
 tensorflow
 tensorflow-datasets==1.2.0
 pyttsx3
+gtts
+flask
 
