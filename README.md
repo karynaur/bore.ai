@@ -6,6 +6,11 @@ This virtual human is randomized and can express emotions with lip-synced speech
 ## Tech Stack
 The app was built using android studio in kotlin, which in turn talks to a python script that is hosted on GCP's Linux VM, which interacts with 3 highly optimized State of the Art Vision and Natural Language Models. 
 
+Code for the mobile application can be found [here](android_app/)<br>
+The code for chat-bot can be found [here](chat_bot.py)<br>
+Lip-Sync model can be found [here](Wav2lip) along with pretrained models [here](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/radrabha_m_research_iiit_ac_in/EdjI7bZlgApMqsVoEUUXpLsBxqXbn5z8VTmoxp55YNDcIA?e=n9ljGW)<br>
+Result video [here](Wav2Lip/results/) and output audio [here](assets/)
+
 ## Workflow:
 
 1. The app starts off by fetching the picture of a random person (who does not exist) from [thispersondoesnotexist.com](https://thispersondoesnotexist.com), which is then sent to a deep fake model to get a video of the person(?) making random facial expressions until there is no voice input from the user.
