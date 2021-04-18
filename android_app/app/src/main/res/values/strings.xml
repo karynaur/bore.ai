@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VideoCall</string>
+    <string name="welcome">\"Video Call a person who doesn\'t exist\" \n
+    An app which lets you talk to a person who doesn\'t exist at all, that too almost in realtime.</string>
+    <string name="status">Video Call a person who doesn\'t exist</string>
+    <string name="button">Video Call</string>
+</resources>
