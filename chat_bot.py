@@ -371,5 +371,5 @@ def predict(sentence):
   predicted_sentence = tokenizer.decode(
       [i for i in prediction if i < tokenizer.vocab_size])
 
-  return predicted_sentence.replace(' .','.')
+  return predicted_sentence.replace(' .','.').replace(' ,',',').replace(' re',' are').replace(' s',' is')
 
